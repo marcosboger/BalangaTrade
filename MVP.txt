@@ -1,0 +1,13 @@
+MVP:
+	-> Possibilidade de investir em aglumas ações (5 pra começar)
+		Magalu
+		Itausa
+		Vale
+		Petro
+		Smart Fit
+	-> Preço de ações ir variando ao longo do tempo
+		p(t+1) = p(t) + fi(u, desvio)
+	-> 09:00 até as 17:00 (em 180 segundos)
+	-> Valor inicial para investir (1000 R$), tentar terminar com mais que isso
+
+
