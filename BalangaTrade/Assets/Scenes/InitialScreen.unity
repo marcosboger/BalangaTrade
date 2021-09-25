@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: ITSA4
-  mean: 0
-  std: 0
+  mean: 10.97
+  std: 1.5
 --- !u!4 &18053454
 Transform:
   m_ObjectHideFlags: 0
@@ -439,8 +439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: MGL3
-  mean: 0
-  std: 0
+  mean: 15.63
+  std: 1
 --- !u!4 &260404643
 Transform:
   m_ObjectHideFlags: 0
@@ -1172,8 +1172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: ABEV3
-  mean: 0
-  std: 0
+  mean: 15.84
+  std: 0.5
 --- !u!4 &962039910
 Transform:
   m_ObjectHideFlags: 0
@@ -1492,8 +1492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: BBDC4
-  mean: 0
-  std: 0
+  mean: 20.26
+  std: 1.75
 --- !u!4 &1185567059
 Transform:
   m_ObjectHideFlags: 0
@@ -2246,8 +2246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: VALE3
-  mean: 0
-  std: 0
+  mean: 77.69
+  std: 5
 --- !u!4 &1545677459
 Transform:
   m_ObjectHideFlags: 0
@@ -2293,8 +2293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nome: PETR4
-  mean: 0
-  std: 0
+  mean: 26.9
+  std: 2
 --- !u!4 &1577423030
 Transform:
   m_ObjectHideFlags: 0
