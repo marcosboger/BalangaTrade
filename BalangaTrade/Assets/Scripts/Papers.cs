@@ -9,14 +9,16 @@ public class Papers : MonoBehaviour
     [SerializeField]
     string nome;
     [SerializeField]
-    float Media;
+    float mean;
     [SerializeField]
-    float Desvio;
+    float std;
+    float price;
 
     // Start is called before the first frame update
     void Start()
     {
-        inicial = Normal.WithMeanVariance(Media, (Desvio*Desvio));
+        inicial = Normal.WithMeanVariance(mean, (std*std));
+        price = mean;
     }
 
     // Update is called once per frame
@@ -24,10 +26,16 @@ public class Papers : MonoBehaviour
     {
         transform.Translate(new Vector3(0.005f, 0, 0));
         var sample = inicial.Sample();
+        price = (float)sample;
         Debug.Log(sample);
-        if (sample > Media)
+        if (sample > mean)
             transform.Translate(new Vector3(0, 0.01f, 0));
         else
             transform.Translate(new Vector3(0, -0.01f, 0));
+    }
+    public float getPrice()
+    {
+        return price;
+
     }
 }
