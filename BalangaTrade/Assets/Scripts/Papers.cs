@@ -13,10 +13,12 @@ public class Papers : MonoBehaviour
     [SerializeField]
     float std;
     float price;
+    float percentageVariation;
 
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(changePaperPrice(1));
         inicial = Normal.WithMeanVariance(mean, (std*std));
         price = mean;
     }
@@ -24,18 +26,33 @@ public class Papers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0.005f, 0, 0));
-        var sample = inicial.Sample();
-        price = (float)sample;
-        Debug.Log(sample);
-        if (sample > mean)
-            transform.Translate(new Vector3(0, 0.01f, 0));
-        else
-            transform.Translate(new Vector3(0, -0.01f, 0));
+        //transform.Translate(new Vector3(0.005f, 0, 0));
     }
     public float getPrice()
     {
         return price;
+    }
 
+    public float getPercentageVariation()
+    {
+        return percentageVariation;
+    }
+
+    IEnumerator changePaperPrice(float time)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(time);
+
+            // Code to execute after the delay
+            var sample = inicial.Sample();
+            price = (float)sample;
+            percentageVariation = ((price / mean) - 1) * 100;
+            //Debug.Log(sample);
+            if (sample > mean)
+                transform.Translate(new Vector3(0, 0.01f, 0));
+            else
+                transform.Translate(new Vector3(0, -0.01f, 0));
+        }
     }
 }
