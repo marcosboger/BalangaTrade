@@ -5,9 +5,21 @@ MVP:
 		Vale
 		Petro
 		Smart Fit
+	-> Variação do Ibovespa
+	-> Para cada ação:
+		Nome
+		Variação Normal
+		Média (Preço de hoje)
+		Desvio de Padrão (de acordo com as últimas variações)
 	-> Preço de ações ir variando ao longo do tempo
 		p(t+1) = p(t) + fi(u, desvio)
 	-> 09:00 até as 17:00 (em 180 segundos)
 	-> Valor inicial para investir (1000 R$), tentar terminar com mais que isso
 
+To-do's:
+	Conseguir vender ação
+	Background andar
+	Layout com ações na carteira, quantidade e preço, valor dadas as ações
+	
+	
 
